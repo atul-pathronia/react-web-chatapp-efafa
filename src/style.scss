@@ -24,6 +24,9 @@ html {
     gap: 1rem;
     align-items: center;
     justify-content: center;
+    @media only screen and (max-width: 425px) {
+      max-width: 90%;
+    }
 
     .logo {
       color: #5d5b8d;
@@ -97,10 +100,16 @@ html {
     border-radius: 1rem;
     overflow: hidden;
     border: 1px solid white;
+    @media only screen and (max-width: 768px) {
+      width: 90%;
+    }
 
     .sidebar {
       flex: 1;
       background-color: #3e3c61;
+      @media only screen and (max-width: 426px) {
+        flex: 0.5;
+      }
 
       .navbar {
         display: flex;
@@ -114,12 +123,19 @@ html {
         .logo {
           font-size: 2.4rem;
           font-weight: bold;
+          @media only screen and (max-width: 1024px) {
+            display: none;
+          }
         }
 
         .user {
           display: flex;
           gap: 1rem;
           align-items: center;
+          @media only screen and (max-width: 768px) {
+            width: 100%;
+            justify-content: space-between;
+          }
 
           img {
             width: 2.4rem;
